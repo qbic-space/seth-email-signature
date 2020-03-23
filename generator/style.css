@@ -1,0 +1,14 @@
+header {
+    width: 425px;
+    height: 100%;
+    float: left;
+    background-image: url(/generator/img/baby-bitting-foot.jpg);
+}
+
+label {
+    display: block;
+}
+
+main {
+    margin-left: 425px;
+}
