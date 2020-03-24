@@ -1,0 +1,164 @@
+$blue: #3bbced;
+$grey: #999;
+
+body, h1, h2 {
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI";
+    background: white !important;
+}
+
+#content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    max-width: 99%;
+    height: 100%;
+    grid-template-areas: 
+    "aside aside header header header"
+    "aside aside main   main   main";
+}
+
+#grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-template-columns: 480px calc( 100% - 480px );
+    grid-auto-rows: minmax(100%, auto);
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: none;
+}
+
+#grid p {
+    border: 1px solid $blue;
+    margin: 0;
+    background: #222 ;
+    opacity: 0.15;
+}
+
+#grid-toggle:checked+#content #grid {
+    display: grid;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+}
+
+header, main {
+    padding: 0 25px;
+}
+
+aside {
+    grid-area: aside;
+    background-image: url(/generator/img/baby-bitting-foot.jpg);
+    background-size: cover;
+    padding: 50% 25px 0 50px;
+}
+
+aside p {
+    background: rgba($color: white, $alpha: 0.75);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+
+h2 {
+    font-size: 1em;
+}
+
+#generator-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "gen-name gen-surname"
+    "gen-jobpl gen-joben"
+    "gen-phone ."
+    "gen-user gen-button";
+    text-align: right;
+}
+
+#generator-name {
+    grid-area: gen-name;
+}
+
+#generator-surname {
+    grid-area: gen-surname;
+}
+
+#generator-job-pl {
+    grid-area: gen-jobpl;
+}
+
+#generator-job-en {
+    grid-area: gen-joben;
+}
+
+#generator-phone {
+    grid-area: gen-phone;
+
+}
+
+#generator-username input, #generator-phone input {
+    text-align: center;
+}
+
+#generator-phone input {
+    min-width: 100px !important;
+}
+
+#generator-username {
+    grid-area: gen-user;
+}
+
+input, select {
+    border: none;
+}
+
+input {
+    margin: 5px;
+    min-width: 70%;
+    border-bottom: 1px solid $blue;
+}
+
+input:focus, input:active, {
+    border: none;
+    border-bottom: 2px solid $blue;
+}
+
+label {
+    display: inline-block;
+    font-size: 0.7em;
+    color: $grey;
+}
+
+#preview {
+    background: #eee;
+    border-top: 1px solid $grey;
+}
+
+#generator-button {
+    grid-area: gen-button;
+    padding: 5px;
+    text-align: right;
+}
+
+#generator-button button {
+    padding: 10px 50px;
+    background: $blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+}

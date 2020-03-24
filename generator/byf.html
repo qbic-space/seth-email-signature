@@ -1,90 +1,117 @@
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../signature/signature.css">
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="stylesheet"
+          href="../signature/signature.css">
 </head>
 
 <body>
-    <header>
-        <h1>Bite your footer A.D. 2020</h1>
-        <p>Witaj w generatorze sygnatur mailowych w Seth Software.</p>
-        <p>Wypełnij formularz, następnie sprawdź, czy wszystko się zgadza w podglądzie Twojej sygnatury.</p>
-    </header>
-    <main>
-        <div>
-            <label>Imię: <input placeholder="Genowefa" /></label>
-            <label>Nazwisko: <input placeholder="Pigwa-Brzęczyszczykiewicz" /></label>
-            <label>Stanowisko (PL): <input placeholder="Specjalista ds. Rozwoju Systemów Informatycznych" /></label>
-            <label>Stanowisko (EN): <input placeholder="Solution Architect" /></label>
-            <label>Nr telefonu:
-                <select>
-                    <option value="PL" selected>PL +48</option>
-                    <option value="UA">UA +380</option>
-                    <option value="RU">RU +7</option>
-                    <option value="TUR">TUR +90</option>
-                </select>
-                <input placeholder="666-111-888" />
-            </label>
-            <br>
-            <label>Jeśli nazwa użytkownika nie zgadza się, popraw ją samodzielnie: <input
-                    placeholder="gpigwa-brzeczyszczykiewicz" /></label>
-            <br>
-        </div>
-        <div>
-            <table>
-                <tr>
-                    <td class="left-side">
-                        <a href="http://www.seth.software"><img src="http://sethsoftware.com/src/tree-logo.png"
-                                alt=""></a>
-                    </td>
-                    <td class="right-side">
-                        <p class="footnote">Z poważaniem / Best regards</p>
-                        <p class="name">Genowefa Pigwa&#8209;Brzęczyszczykiewicz</p>
-                        <p class="footnote">Specjalista&nbsp;ds.&nbsp;Rozwoju&nbsp;Systemów&nbsp;Informatycznych /
-                            Solution&nbsp;Architect</p>
-                        <table>
-                            <tr>
-                                <td>
-                                    <br>
-                                    <p class="footnote">GSM: <a
-                                            href="tel:+48-665-747-384">+48&nbsp;123&nbsp;456&nbsp;789</a>
-                                    </p>
-                                    <p class="footnote">email: <a
-                                            href="mailto:gpigwa-brzeczyszczykiweicz@seth.software">gpigwa&#8209;brzeczyszczykiweicz@seth.software</a>
-                                    </p>
-                                    <p class="footnote"><strong></strong><a class="accent"
-                                            href="http://www.seth.software">www.seth.software</a></strong></p>
-                                </td>
-                                <td>
-                                    <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
-                                            src="http://sethsoftware.com/src/linkedin.png" /></a>
-                                    <a href="https://www.facebook.com/sethsoftware/"><img class="social"
-                                            src="http://sethsoftware.com/src/fb.png" /></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="footnote green-company">
-                                        Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
-                                        Think green. Please consider the environment before printing.
-                                    </p>
-                                </td>
-                                <td>
-                                    <img class="globe" src="http://sethsoftware.com/src/green-globe.png" alt="">
-                                </td>
-                            </tr>
-                        </table>
-                        <p class="company-desc">
-                            Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
-                            ul.Strefowa
-                            1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy w
-                            Rzeszowie, XII
-                            Wydział Gospodarczy<br>
-                            KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
-                            Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
-                        </p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </main>
+    <div id="content">
+        <header>
+            <h1>Samodzielnie rozgryź swoją stopkę</h1>
+            <h2>a.k.a. Bite your footer A.D. 2020</h2>
+        </header>
+        <aside>
+            <p>Witaj w generatorze sygnatur mailowych w firmie Seth Software.</p>
+            <p>Wypełnij formularz, następnie sprawdź, czy wszystko się zgadza w podglądzie Twojej sygnatury.</p>
+        </aside>
+        <main>
+            <form id="generator-form">
+                <label id="generator-name">Imię: 
+                    <input placeholder="Genowefa" />
+                </label>
+                <label id="generator-surname">Nazwisko: 
+                    <input placeholder="Pigwa-Brzęczyszczykiewicz" />
+                </label>
+                <label id="generator-job-pl">Stanowisko (PL): 
+                    <input placeholder="Specjalista ds. Rozwoju Systemów Informatycznych" />
+                </label>
+                <label id="generator-job-en">Stanowisko (EN): 
+                    <input placeholder="Solution Architect" />
+                </label>
+                <label id="generator-phone">
+                    Nr telefonu:
+                    <select>
+                        <option value="PL"
+                                selected>PL +48</option>
+                        <option value="UA">UA +380</option>
+                        <option value="RU">RU +7</option>
+                        <option value="TUR">TUR +90</option>
+                    </select>
+                    <input placeholder="666-111-888" />
+                </label>
+                <label id="generator-username">
+                    Jeśli nazwa użytkownika jest niepoprawna, popraw ją ręcznie:<br>
+                    <input placeholder="gpigwa-brzeczyszczykiewicz" />
+                </label>
+                <div id="generator-button">
+                    <button>Dalej</button>
+                </div>
+            </form>
+            <div id="preview">
+                --
+                <table>
+                    <tr>
+                        <td class="left-side">
+                            <a href="http://www.seth.software">
+                                <img src="http://seth.software/src/tree-logo.png"
+                                     alt="">
+                            </a>
+                        </td>
+                        <td class="right-side">
+                            <p class="footnote">Z poważaniem / Best regards</p>
+                            <p class="name">Genowefa Pigwa&#8209;Brzęczyszczykiewicz</p>
+                            <p class="footnote">
+                                Specjalista&nbsp;ds.&nbsp;Rozwoju&nbsp;Systemów&nbsp;Informatycznych
+                                / Solution&nbsp;Architect</p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <p class="footnote">GSM: <a
+                                           href="tel:+48-665-747-384">+48&nbsp;123&nbsp;456&nbsp;789</a>
+                                        </p>
+                                        <p class="footnote">email: <a
+                                           href="mailto:gpigwa-brzeczyszczykiweicz@seth.software">gpigwa&#8209;brzeczyszczykiewicz@seth.software</a>
+                                        </p>
+                                        <p class="footnote"><strong></strong><a class="accent"
+                                           href="http://www.seth.software">www.seth.software</a></strong></p>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
+                                           src="http://seth.software/src/linkedin.png" /></a>
+                                        <a href="https://www.facebook.com/sethsoftware/"><img class="social"
+                                           src="http://seth.software/src/fb.png" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="footnote green-company">
+                                            Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
+                                            Think green. Please consider the environment before printing.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <img class="globe"
+                                             src="http://seth.software/src/green-globe.png"
+                                             alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="company-desc">
+                                Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
+                                ul.Strefowa
+                                1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy
+                                w
+                                Rzeszowie, XII
+                                Wydział Gospodarczy<br>
+                                KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
+                                Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div><!-- content -->
 </body>
