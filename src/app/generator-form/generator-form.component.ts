@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from './person';
-import { GIENIA } from './sample-genowefa';
+import { Person } from '../person';
+import { GIENIA } from '../sample-genowefa';
 
 @Component({
   selector: 'app-generator-form',
@@ -9,7 +9,7 @@ import { GIENIA } from './sample-genowefa';
 })
 export class GeneratorFormComponent implements OnInit {
 
-  gienia = GIENIA;
+  person = GIENIA;
 
   constructor() { }
 

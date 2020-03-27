@@ -1,86 +1,25 @@
-<form id="generator-form">
+<div id="generator-form">
     <label id="generator-name">Imię:
-    <input placeholder="{{ gienia.name }}" />
+    <input [(ngModel)]="person.name" placeholder="name" />
     </label>
     <label id="generator-surname">Nazwisko:
-    <input placeholder="{{ gienia.surname }}" />
+    <input placeholder="{{ person.surname }}" />
     </label>
     <label id="generator-job-pl">Stanowisko (PL):
-    <input placeholder="{{ gienia.jobPL }}" />
+    <input placeholder="{{ person.jobPL }}" />
     </label>
     <label id="generator-job-en">Stanowisko (EN):
-    <input placeholder="{{ gienia.jobEN }}" />
+    <input placeholder="{{ person.jobEN }}" />
     </label>
     <label id="generator-phone">Nr telefonu: +48
-    <input placeholder="{{ gienia.phone }}" />
+    <input placeholder="{{ person.phone }}" />
     </label>
     <label id="generator-username">
     Jeśli nazwa użytkownika jest niepoprawna, popraw ją ręcznie:<br>
-    <input placeholder="{{ gienia.user }}" />
+    <input placeholder="{{ person.user }}" />
     </label>
     <div id="generator-button">
     <button>Dalej</button>
     </div>
-</form>
-<div id="preview">
-    &nbsp;--
-    <table id="main-preview">
-    <tr>
-        <td class="left-side">
-        <a href="http://www.seth.software">
-            <img src="http://seth.software/src/tree-logo.png"
-                alt="">
-        </a>
-        </td>
-        <td class="right-side">
-        <p class="footnote">Z poważaniem / Best regards</p>
-        <p class="name">{{ gienia.name }} {{ gienia.surname }}</p>
-        <p class="footnote">
-            {{ gienia.jobPL }} / {{ gienia.jobEN }}</p>
-        <table>
-            <tr>
-            <td>
-                <br>
-                <p class="footnote">GSM: <a href="tel:+48 {{ gienia.phone }}">+48 {{ gienia.phone }}</a>
-                </p>
-                <p class="footnote">email: <a
-                    href="mailto:{{ gienia.user }}@seth.software">{{ gienia.user }}@seth.software</a>
-                </p>
-                <p class="footnote"><strong><a class="accent"
-                        href="http://www.seth.software">www.seth.software</a></strong></p>
-            </td>
-            <td>
-                <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
-                        src="http://seth.software/src/linkedin.png" /></a>
-                <a href="https://www.facebook.com/sethsoftware/"><img class="social"
-                        src="http://seth.software/src/fb.png" /></a>
-            </td>
-            </tr>
-            <tr>
-            <td>
-                <p class="footnote green-company">
-                Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
-                Think green. Please consider the environment before printing.
-                </p>
-            </td>
-            <td>
-                <img class="globe"
-                    src="http://seth.software/src/green-globe.png"
-                    alt="">
-            </td>
-            </tr>
-        </table>
-        <p class="company-desc">
-            Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
-            ul.Strefowa
-            1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy
-            w
-            Rzeszowie, XII
-            Wydział Gospodarczy<br>
-            KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
-            Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
-        </p>
-        </td>
-    </tr>
-    </table>
 </div>
+<app-signature-preview [person]="person"></app-signature-preview>

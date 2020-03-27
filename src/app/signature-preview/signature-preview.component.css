@@ -1,0 +1,79 @@
+#preview {
+  background: #eee;
+  border-top: 1px solid #999;
+}
+
+#table-preview {
+  padding-bottom: 10px;
+}
+
+#preview a {
+  text-decoration: none;
+}
+
+#preview p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#preview .left-side {
+  width: 220px;
+}
+
+#preview .left-side a {
+  display: block;
+  text-align: center;
+}
+
+#preview .footnote {
+  font-size: 0.7em;
+  color: #324b9b;
+  letter-spacing: 0.1em;
+  margin: 0.1em;
+}
+
+#preview .green-company {
+  letter-spacing: 0;
+  font-style: italic;
+  color: #28ae7a;
+}
+
+#preview .footnote a {
+  color: #324b9b;
+}
+
+#preview .social {
+  float: right;
+  margin: 1px;
+}
+
+#preview .accent {
+  font-weight: 900;
+}
+
+#preview .name {
+  letter-spacing: 0.5em;
+  color: #324b9b;
+  font-size: 1em;
+  margin: 0.1em;
+}
+
+#preview .large-logo {
+  margin: 0 auto;
+}
+
+#preview .small-logo {
+  margin: 30% auto;
+}
+
+#preview .right-side {
+  border-left: 0.4em solid #28ae7a;
+  padding-left: 10px;
+  max-width: 360px;
+}
+
+#preview .company-desc {
+  font-size: 0.6em;
+  letter-spacing: 0.02em;
+  color: #324b9b;
+}
+/*# sourceMappingURL=signature-preview.component.css.map */
