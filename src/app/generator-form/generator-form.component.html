@@ -1,25 +1,25 @@
-<div id="generator-form">
+<form id="generator-form">
     <label id="generator-name">Imię:
-    <input [(ngModel)]="person.name" placeholder="name" />
+    <input name="name" [(ngModel)]="person.name" placeholder="name" />
     </label>
     <label id="generator-surname">Nazwisko:
-    <input placeholder="{{ person.surname }}" />
+    <input name="surname" [(ngModel)]="person.surname" placeholder="surname" />
     </label>
     <label id="generator-job-pl">Stanowisko (PL):
-    <input placeholder="{{ person.jobPL }}" />
+    <input name="jobPL" [(ngModel)]="person.jobPL" placeholder="jobPL" />
     </label>
     <label id="generator-job-en">Stanowisko (EN):
-    <input placeholder="{{ person.jobEN }}" />
+    <input name="jobEN" [(ngModel)]="person.jobEN" placeholder="jobEN" />
     </label>
     <label id="generator-phone">Nr telefonu: +48
-    <input placeholder="{{ person.phone }}" />
+    <input name="phone" [(ngModel)]="person.phone" placeholder="phone" />
     </label>
     <label id="generator-username">
     Jeśli nazwa użytkownika jest niepoprawna, popraw ją ręcznie:<br>
-    <input placeholder="{{ person.user }}" />
+    <input name="user" [(ngModel)]="person.user" placeholder="user" />
     </label>
     <div id="generator-button">
     <button>Dalej</button>
     </div>
-</div>
+</form>
 <app-signature-preview [person]="person"></app-signature-preview>
