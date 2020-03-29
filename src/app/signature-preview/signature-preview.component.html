@@ -20,7 +20,8 @@
                 <p class="footnote">GSM: <a href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace }}</a>
                 </p>
                 <p class="footnote">email: <a
-                    href="mailto:{{ person.user }}@seth.software">{{ person.user | nonBreakableHyphen | nonBreakableSpace }}@seth.software</a>
+                    href="mailto:{{ person.user | nonBreakableHyphen | nonBreakableSpace | generateUsername : person.name : person.surname | lowercase }}@seth.software">
+                    {{ person.user | nonBreakableHyphen | nonBreakableSpace | generateUsername : person.name : person.surname | lowercase }}@seth.software</a>
                 </p>
                 <p class="footnote"><strong><a class="accent"
                         href="http://www.seth.software">www.seth.software</a></strong></p>
