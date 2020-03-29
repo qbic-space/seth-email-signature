@@ -7,7 +7,7 @@
   grid-gap: 10px;
       grid-template-areas: "gen-name gen-surname" "gen-jobpl gen-joben" "gen-phone ." "gen-user gen-button";
   text-align: right;
-  height: 40%;
+  height: 33%;
   padding: 1% 0;
 }
 
