@@ -9,9 +9,9 @@ export class GenerateUsernamePipe implements PipeTransform {
 
   transform( value: string, nameStr: string, surnameStr: string ): string {
     if ( !surnameStr ) {
-      return nameStr;
+      return value.replace(value, nameStr);
     }
-    return nameStr.charAt(0) + surnameStr;
+    return value.replace(value, nameStr.charAt(0) + surnameStr);
   }
 
 }

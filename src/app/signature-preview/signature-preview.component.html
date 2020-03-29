@@ -1,4 +1,4 @@
-<div *ngIf="person" id="preview">
+<div id="preview">
     &nbsp;--
     <table id="table-preview">
     <tr>
@@ -20,7 +20,7 @@
                 <p class="footnote">GSM: <a href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace }}</a>
                 </p>
                 <p class="footnote">email: <a
-                    href="mailto:{{ person.user | nonBreakableHyphen | nonBreakableSpace | generateUsername : person.name : person.surname | lowercase }}@seth.software">
+                    href="mailto:{{ person.user | generateUsername : person.name : person.surname | lowercase }}@seth.software">
                     {{ person.user | nonBreakableHyphen | nonBreakableSpace | generateUsername : person.name : person.surname | lowercase }}@seth.software</a>
                 </p>
                 <p class="footnote"><strong><a class="accent"
