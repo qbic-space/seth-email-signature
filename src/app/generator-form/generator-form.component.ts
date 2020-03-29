@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from '../person';
 import { GIENIA } from '../sample-genowefa';
 
 @Component({
