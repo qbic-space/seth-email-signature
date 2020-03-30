@@ -88,6 +88,7 @@ label {
 
 #generator-button button {
   padding: 10px 50px;
+  margin: 2px;
   background: #4c8bf5;
   border: none;
   border-radius: 5px;

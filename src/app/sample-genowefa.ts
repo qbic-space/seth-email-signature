@@ -1,12 +1,12 @@
 import { Person } from "./person";
 
 export const GIENIA = {
-    name: 'Genowefa',
-    surname: 'Pigwa-Brzęczyszczykiewicz',
-    jobPL: 'Specjalista ds. Rozwoju Papieru Toaletowego',
-    jobEN: 'Toilet Paper Developer',
+    name: '',
+    surname: '',
+    jobPL: '',
+    jobEN: '',
     phone: '',
-    user: ''
+    user: 'info'
 };
 
 // Non-breakable hyphen: ‑ 

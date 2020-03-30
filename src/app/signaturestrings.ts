@@ -1,0 +1,4 @@
+export const STRINGS = {
+    str1: '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body style="background-color:#eee"><table><tbody><tr><td style="width:220px"><a href="http://www.seth.software" style="display:block;text-align:center;text-decoration:none"><img src="http://sethsoftware.com/src/tree-logo.png" alt=""></a></td><td style="border-left:.4em solid #28ae7a;max-width:360px;padding-left:10px"><p style="color:#324b9b;font-family:Arial,Helvetica,sans-serif;font-size:.7em;letter-spacing:.1em;margin:.1em">Z poważaniem / Best regards</p><p style="color:#324b9b;font-family:Arial,Helvetica,sans-serif;font-size:1em;letter-spacing:.5em;margin:.1em">',
+
+}

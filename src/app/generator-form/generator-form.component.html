@@ -1,9 +1,9 @@
 <form id="generator-form">
     <label id="generator-name">Imię:
-    <input name="name" [(ngModel)]="person.name" placeholder="Imię"/>
+    <input (change)="genUsername()" [(ngModel)]="person.name" placeholder="Imię" name="name"/>
     </label>
     <label id="generator-surname">Nazwisko:
-    <input name="surname" [(ngModel)]="person.surname" placeholder="Nazwisko"/>
+    <input (change)="genUsername()" [(ngModel)]="person.surname" placeholder="Nazwisko" name="surname"/>
     </label>
     <label id="generator-job-pl">Stanowisko (PL):
     <input name="jobPL" [(ngModel)]="person.jobPL" placeholder="Stanowisko po polsku"/>
@@ -15,11 +15,12 @@
     <input name="phone" [(ngModel)]="person.phone" placeholder="Numer telefonu"/>
     </label>
     <label id="generator-username">
-    Jeśli nazwa użytkownika jest niepoprawna, popraw ją ręcznie:<br>
+    Jeśli nazwa użytkownika jest błędna, popraw ją ręcznie:<br>
     <input name="user" [(ngModel)]="person.user" placeholder="{{ person.user | generateUsername : person.name : person.surname | lowercase }}"/>
     </label>
     <div id="generator-button">
-    <button>Dalej</button>
+    <button (click)="inliner()">Dalej</button>
+    <button (click)="checker()">Check</button>
     </div>
 </form>
 <app-signature-preview [person]="person"></app-signature-preview>
