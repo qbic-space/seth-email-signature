@@ -17,8 +17,8 @@
             <tr>
             <td>
                 <br>
-                <p class="footnote">tel.: <a href="tel:+48 {{ person.phone }}">+48&nbsp;17&nbsp;784&nbsp;2222</a></p>
-                <p *ngIf="person.phone" class="footnote">GSM: <a href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace }}</a>
+                <p class="footnote">tel.: <a href="tel:+48 17 784 2222">+48&nbsp;17&nbsp;784&nbsp;2222</a></p>
+                <p *ngIf="person.phone" class="footnote">GSM: <a href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace | mask:'000 000 000' }}</a>
                 </p>
                 <p class="footnote">email: <a
                     href="mailto:{{ person.user | lowercase }}@seth.software">

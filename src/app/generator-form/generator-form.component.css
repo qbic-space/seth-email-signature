@@ -8,7 +8,7 @@
       grid-template-areas: "gen-name gen-surname" "gen-jobpl gen-joben" "gen-phone ." "gen-user gen-button";
   text-align: right;
   height: 33%;
-  padding: 1% 0;
+  margin-bottom: 3%;
 }
 
 #generator-name {
@@ -43,10 +43,6 @@
 
 #generator-username input, #generator-phone input {
   text-align: center;
-}
-
-#generator-phone input {
-  min-width: 100px !important;
 }
 
 #generator-username {

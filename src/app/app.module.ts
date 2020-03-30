@@ -2,8 +2,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-/* Additional imports from @angular */
+/* Additional external imports */
 import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 /* Components */
 import { GeneratorFormComponent } from './generator-form/generator-form.component';
 import { SignaturePreviewComponent } from './signature-preview/signature-preview.component';
@@ -23,7 +24,8 @@ import { GenerateUsernamePipe } from './generate-username.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

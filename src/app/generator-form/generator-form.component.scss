@@ -13,7 +13,7 @@ $grey: #999;
     "gen-user gen-button";
     text-align: right;
     height: 33%;
-    padding: 1% 0;
+    margin-bottom: 3%;
 }
 
 #generator-name {
@@ -39,10 +39,6 @@ $grey: #999;
 
 #generator-username input, #generator-phone input {
     text-align: center;
-}
-
-#generator-phone input {
-    min-width: 100px !important;
 }
 
 #generator-username {
