@@ -7,6 +7,8 @@ import { GIENIA } from './sample-genowefa';
 })
 export class GenerateUsernamePipe implements PipeTransform {
 
+  // TODO Send username to the model with this pipe -> remove genUsername() function in generator-form component
+
   transform( value: string, nameStr: string, surnameStr: string ): string {
     if ( !surnameStr ) {
       return value.replace(value, nameStr);

@@ -12,6 +12,7 @@ import { SignaturePreviewComponent } from './signature-preview/signature-preview
 import { NonBreakableSpacePipe } from './non-breakable-space.pipe';
 import { NonBreakableHyphenPipe } from './non-breakable-hyphen.pipe';
 import { GenerateUsernamePipe } from './generate-username.pipe';
+import { DeployYourSignatureComponent } from './deploy-your-signature/deploy-your-signature.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { GenerateUsernamePipe } from './generate-username.pipe';
     NonBreakableSpacePipe,
     NonBreakableHyphenPipe,
     GenerateUsernamePipe,
+    DeployYourSignatureComponent,
   ],
   imports: [
     BrowserModule,
