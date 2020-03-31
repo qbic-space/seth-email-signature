@@ -1,64 +1,90 @@
 <div id="preview">
-    &nbsp;--
-    <table id="table-preview">
+  &nbsp;--
+  <table id="table-preview">
     <tr>
-        <td class="left-side">
+      <td class="left-side">
         <a href="http://www.seth.software">
-            <img src="http://seth.software/src/tree-logo.png"
-                alt="">
+          <img src="http://seth.software/src/tree-logo.png"
+               alt="">
         </a>
-        </td>
-        <td class="right-side">
+      </td>
+      <td class="right-side">
         <p class="footnote">Z poważaniem / Best regards</p>
-        <p class="name">{{ person.name | nonBreakableHyphen | nonBreakableSpace }} {{ person.surname | nonBreakableHyphen | nonBreakableSpace }}</p>
+        <p class="name">{{ person.name | nonBreakableHyphen | nonBreakableSpace }}
+          {{ person.surname | nonBreakableHyphen | nonBreakableSpace }}</p>
         <p class="footnote">
-            {{ person.jobPL | nonBreakableHyphen | nonBreakableSpace }} / {{ person.jobEN | nonBreakableHyphen | nonBreakableSpace }}</p>
+          {{ person.jobPL | nonBreakableHyphen | nonBreakableSpace }} /
+          {{ person.jobEN | nonBreakableHyphen | nonBreakableSpace }}</p>
+          <br>
         <table>
-            <tr>
+          <tr>
             <td>
-                <br>
-                <p class="footnote">tel.: <a href="tel:+48 17 784 2222">+48&nbsp;17&nbsp;784&nbsp;2222</a></p>
-                <p *ngIf="person.phone" class="footnote">GSM: <a href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace | mask:'000 000 000' }}</a>
-                </p>
-                <p class="footnote">email: <a
-                    href="mailto:{{ person.user | lowercase }}@seth.software">
-                    {{ person.user | nonBreakableHyphen | nonBreakableSpace | lowercase }}@seth.software</a>
-                </p>
-                <p class="footnote"><strong><a class="accent"
-                        href="http://www.seth.software">www.seth.software</a></strong></p>
+              <table class="footnote">
+                <tr>
+                  <td>
+                    <p>phone: </p>
+                  </td>
+                  <td>
+                    <p><a href="tel:+48 17 784 2222">+48&nbsp;17&nbsp;784&nbsp;2222</a></p>
+                  </td>
+                </tr>
+                <tr *ngIf="person.phone">
+                  <td>
+                    <p>GSM: </p>
+                  </td>
+                  <td>
+                    <p><a
+                         href="tel:+48 {{ person.phone }}">+48&nbsp;{{ person.phone  | nonBreakableHyphen | nonBreakableSpace | mask:'000 000 000' }}</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>email: </p>
+                  </td>
+                  <td>
+                    <p><a href="mailto:{{ person.user | lowercase }}@seth.software">
+                        {{ person.user | nonBreakableHyphen | nonBreakableSpace | lowercase }}@seth.software</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a class="accent"
+                       href="http://www.seth.software">www.seth.software</a></td>
+                </tr>
+              </table>
             </td>
             <td>
-                <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
-                        src="http://seth.software/src/linkedin.png" /></a>
-                <a href="https://www.facebook.com/sethsoftware/"><img class="social"
-                        src="http://seth.software/src/fb.png" /></a>
+              <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
+                     src="http://seth.software/src/linkedin.png" /></a>
+              <a href="https://www.facebook.com/sethsoftware/"><img class="social"
+                     src="http://seth.software/src/fb.png" /></a>
             </td>
-            </tr>
-            <tr>
+          </tr>
+          <tr>
             <td>
-                <p class="footnote green-company">
+              <p class="footnote green-company">
                 Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
                 Think green. Please consider the environment before printing.
-                </p>
+              </p>
             </td>
             <td>
-                <img class="globe"
-                    src="http://seth.software/src/green-globe.png"
-                    alt="">
+              <img class="globe"
+                   src="http://seth.software/src/green-globe.png"
+                   alt="">
             </td>
-            </tr>
+          </tr>
         </table>
         <p class="company-desc">
-            Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
-            ul.Strefowa
-            1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy
-            w
-            Rzeszowie, XII
-            Wydział Gospodarczy<br>
-            KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
-            Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
+          Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
+          ul.Strefowa
+          1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy
+          w
+          Rzeszowie, XII
+          Wydział Gospodarczy<br>
+          KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
+          Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
         </p>
-        </td>
+      </td>
     </tr>
-    </table>
+  </table>
 </div>

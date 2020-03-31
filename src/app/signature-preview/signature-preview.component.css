@@ -29,7 +29,10 @@
   color: #324b9b;
   letter-spacing: 0.1em;
   margin: 0.1em;
-  min-height: 13.33px;
+}
+
+#preview table td {
+  padding: 0;
 }
 
 #preview .green-company {
@@ -69,7 +72,7 @@
 
 #preview .right-side {
   border-left: 0.4em solid #28ae7a;
-  padding-left: 10px;
+  padding-left: 10px !important;
   max-width: 360px;
 }
 

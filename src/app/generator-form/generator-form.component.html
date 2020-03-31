@@ -25,6 +25,7 @@
   </label>
   <label id="generator-phone">Nr telefonu: +48
     <input name="phone"
+           [dropSpecialCharacters]="false"
            mask="000 000 000"
            [(ngModel)]="person.phone"
            placeholder="Numer telefonu" />
@@ -32,11 +33,10 @@
   <label id="generator-username">Użytkownik:
     <input name="user"
            [(ngModel)]="person.user"
-           placeholder="{{ person.user | generateUsername : person.name : person.surname | lowercase }}" />
+           placeholder="Nazwa użytkownika" />
   </label>
   <div id="generator-button">
     <button (click)="inliner()">Dalej</button>
-    <button (click)="phoneMask()">Check</button>
   </div>
 </form>
 <app-signature-preview [person]="person"></app-signature-preview>

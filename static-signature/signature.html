@@ -1,56 +1,94 @@
 <head>
-    <link rel="stylesheet" href="signature.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet"
+        href="signature.css">
+  <meta http-equiv="Content-Type"
+        content="text/html; charset=utf-8">
 </head>
 
 <body>
-    <table>
-        <tr>
-            <td class="left-side">
-                <a href="http://www.seth.software"><img src="http://sethsoftware.com/src/tree-logo.png" alt=""></a>
+  <table id="table-preview">
+    <tr>
+      <td class="left-side">
+        <a href="http://www.seth.software">
+          <img src="http://seth.software/src/tree-logo.png"
+               alt="">
+        </a>
+      </td>
+      <td class="right-side">
+        <p class="footnote">Z poważaniem / Best regards</p>
+        <p class="name">' + this.person.name + ' ' + this.person.surname + '</p>
+        <p class="footnote">
+          ' + this.person.jobPL + ' / ' + this.person.jobEN + '</p>
+        <br>
+        <table>
+          <tr>
+            <td>
+              <table class="footnote">
+                <tr>
+                  <td>
+                    <p>phone: </p>
+                  </td>
+                  <td>
+                    <p><a href="tel:+48 17 784 2222">+48&nbsp;17&nbsp;784&nbsp;2222</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>GSM: </p>
+                  </td>
+                  <td>
+                    <p><a
+                         href="tel:+48 ' + this.person.phone + '">+48&nbsp;' + this.person.phone + '</a>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>email: </p>
+                  </td>
+                  <td>
+                    <p><a href="mailto:' + this.person.user + '@seth.software">
+                        ' + this.person.user + '@seth.software</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><p><a class="accent"
+                       href="http://www.seth.software">www.seth.software</a></p></td>
+                </tr>
+              </table>
             </td>
-            <td class="right-side">
-                <p class="footnote">Z poważaniem / Best regards</p>
-                <p class="name">Genowefa Pigwa&#8209;Brzęczyszczykiewicz</p>
-                <p class="footnote">Specjalista&nbsp;ds.&nbsp;Rozwoju&nbsp;Systemów&nbsp;Informatycznych /
-                    Solution&nbsp;Architect</p>
-                <table>
-                    <tr>
-                        <td>
-                            <br>
-                            <p class="footnote">GSM: <a href="tel:+48-665-747-384">+48&nbsp;123&nbsp;456&nbsp;789</a>
-                            </p>
-                            <p class="footnote">email: <a
-                                    href="mailto:gpigwa-brzeczyszczykiweicz@seth.software">gpigwa&#8209;brzeczyszczykiweicz@seth.software</a>
-                            </p>
-                            <p class="footnote"><strong></strong><a class="accent"
-                                    href="http://www.seth.software">www.seth.software</a></strong></p>
-                        </td>
-                        <td>
-                            <a href="https://www.linkedin.com/company/sethsoftware"><img class="social" src="http://sethsoftware.com/src/linkedin.png" /></a>
-                            <a href="https://www.facebook.com/sethsoftware/"><img class="social" src="http://sethsoftware.com/src/fb.png" /></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p class="footnote green-company">
-                                Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
-                                Think green. Please consider the environment before printing.
-                            </p>
-                        </td>
-                        <td>
-                            <img class="globe" src="http://sethsoftware.com/src/green-globe.png" alt="">
-                        </td>
-                    </tr>
-                </table>
-                <p class="company-desc">
-                    Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski, ul.Strefowa
-                    1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy w Rzeszowie, XII
-                    Wydział Gospodarczy<br>
-                    KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
-                    Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
-                </p>
+            <td>
+              <a href="https://www.linkedin.com/company/sethsoftware"><img class="social"
+                     src="http://seth.software/src/linkedin.png" /></a>
+              <a href="https://www.facebook.com/sethsoftware/"><img class="social"
+                     src="http://seth.software/src/fb.png" /></a>
             </td>
-        </tr>
-    </table>
+          </tr>
+          <tr>
+            <td>
+              <p class="footnote green-company">
+                Firma przyjazna środowisku. Nie drukuj bez potrzeby.<br />
+                Think green. Please consider the environment before printing.
+              </p>
+            </td>
+            <td>
+              <img class="globe"
+                   src="http://seth.software/src/green-globe.png"
+                   alt="">
+            </td>
+          </tr>
+        </table>
+        <p class="company-desc">
+          Seth&nbsp;Software Sp&nbsp;z&nbsp;o.&nbsp;o. z siedzibą: 36-060 Głogów Małopolski,
+          ul.Strefowa
+          1, POLSKA, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd&nbsp;Rejonowy
+          w
+          Rzeszowie, XII
+          Wydział Gospodarczy<br>
+          KRS&nbsp;0000114098 | NIP&nbsp;PL&nbsp;813&nbsp;27&nbsp;09&nbsp;001 |
+          Kapitał&nbsp;zakładowy&nbsp;50&nbsp;000&nbsp;PLN
+        </p>
+      </td>
+    </tr>
+  </table>
 </body>

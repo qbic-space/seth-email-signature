@@ -1,73 +1,85 @@
 body {
-    background-color:#eee;
+  margin: 0;
 }
 
-a {
-    text-decoration: none;
+table {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
+#table-preview {
+  padding-bottom: 10px;
 }
 
-.left-side {
-    width: 220px;
+#table-preview a {
+  text-decoration: none;
 }
 
-.left-side a {
-    display: block;
-    text-align: center;
+#table-preview p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.footnote {
-    font-size: 0.7em;
-    color: #324b9b;
-    letter-spacing: 0.1em;
-    margin: 0.1em;
+#table-preview .left-side {
+  width: 220px;
 }
 
-.green-company {
-    letter-spacing: 0;
-    font-style: italic;
-    color: #28ae7a;
+#table-preview .left-side a {
+  display: block;
+  text-align: center;
 }
 
-.footnote a {
-    color: #324b9b;
+#table-preview .footnote {
+  font-size: 0.7em;
+  color: #324b9b;
+  letter-spacing: 0.1em;
+  margin: 0;
 }
 
-.social {
-    float: right;
-    margin: 1px;
+#table-preview table td {
+  padding: 0;
 }
 
-.accent {
-    font-weight: 900;
+#table-preview .green-company {
+  letter-spacing: 0;
+  font-style: italic;
+  color: #28ae7a;
 }
 
-.name {
-    letter-spacing: 0.5em;
-    color: #324b9b;
-    font-size: 1em;
-    margin: 0.1em;
+#table-preview .footnote a {
+  color: #324b9b;
 }
 
-.large-logo {
-    margin: 0 auto;
+#table-preview .social {
+  float: right;
+  margin: 1px;
 }
 
-.small-logo {
-    margin: 30% auto;
+#table-preview .accent {
+  font-weight: 900;
 }
 
-.right-side {
-    border-left: 0.4em solid #28ae7a;
-    padding-left: 10px;
-    max-width: 360px;
+#table-preview .name {
+  letter-spacing: 0.5em;
+  color: #324b9b;
+  font-size: 1em;
+  margin: 0.1em;
+  min-height: 19px;
 }
 
-.company-desc {
-    font-size: 0.6em;
-    letter-spacing: 0.02em;
-    color: #324b9b;
+#table-preview .large-logo {
+  margin: 0 auto;
 }
+
+#table-preview .right-side {
+  border-left: 0.4em solid #28ae7a;
+  padding-left: 10px !important;
+  max-width: 360px;
+}
+
+#table-preview .company-desc {
+  font-size: 0.6em;
+  letter-spacing: 0.02em;
+  color: #324b9b;
+}
+/*# sourceMappingURL=signature.css.map */

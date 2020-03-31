@@ -1,63 +1,68 @@
 $blue: #3bbced;
 $grey: #999;
 
-#preview {
-    background: #eee;
-    border-top: 1px solid $grey;
+body {
+    margin: 0;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 #table-preview {
     padding-bottom: 10px;
 }
 
-#preview a {
+#table-preview a {
     text-decoration: none;
 }
 
-#preview p {
+#table-preview p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#preview .left-side {
+#table-preview .left-side {
     width: 220px;
 }
 
-#preview .left-side a {
+#table-preview .left-side a {
     display: block;
     text-align: center;
 }
 
-#preview .footnote {
+#table-preview .footnote {
     font-size: 0.7em;
     color: #324b9b;
     letter-spacing: 0.1em;
-    margin: 0.1em;
+    margin: 0;
 }
 
-#preview table td {
+#table-preview table td {
     padding: 0;
 }
 
-#preview .green-company {
+#table-preview .green-company {
     letter-spacing: 0;
     font-style: italic;
     color: #28ae7a;
 }
 
-#preview .footnote a {
+#table-preview .footnote a {
     color: #324b9b;
 }
 
-#preview .social {
+#table-preview .social {
     float: right;
     margin: 1px;
 }
 
-#preview .accent {
+#table-preview .accent {
     font-weight: 900;
 }
 
-#preview .name {
+#table-preview .name {
     letter-spacing: 0.5em;
     color: #324b9b;
     font-size: 1em;
@@ -65,21 +70,17 @@ $grey: #999;
     min-height: 19px;
 }
 
-#preview .large-logo {
+#table-preview .large-logo {
     margin: 0 auto;
 }
 
-#preview .small-logo {
-    margin: 30% auto;
-}
-
-#preview .right-side {
+#table-preview .right-side {
     border-left: 0.4em solid #28ae7a;
     padding-left: 10px !important;
     max-width: 360px;
 }
 
-#preview .company-desc {
+#table-preview .company-desc {
     font-size: 0.6em;
     letter-spacing: 0.02em;
     color: #324b9b;

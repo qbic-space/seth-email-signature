@@ -6,7 +6,7 @@ export const GIENIA = {
     jobPL: '',
     jobEN: '',
     phone: '',
-    user: 'username'
+    user: ''
 };
 
 // Non-breakable hyphen: ‑ 
