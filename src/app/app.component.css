@@ -7,7 +7,12 @@
   grid-gap: 10px;
   max-width: 99%;
   height: 100%;
+  grid-auto-rows: 75px 1fr;
       grid-template-areas: "aside aside header header header" "aside aside main   main   main";
+}
+
+header, main {
+  padding: 0 25px;
 }
 
 header {
@@ -16,7 +21,6 @@ header {
   -ms-grid-column-span: 3;
   grid-area: header;
   text-align: center;
-  padding: 0 25px;
 }
 
 main {
@@ -47,9 +51,5 @@ aside {
 
 h2 {
   font-size: 1em;
-}
-
-header, main {
-  padding: 0 25px;
 }
 /*# sourceMappingURL=app.component.css.map */
