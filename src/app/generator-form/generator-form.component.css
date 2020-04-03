@@ -16,8 +16,8 @@ app-signature-preview {
 }
 
 #generator-form {
-  -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: center;
+      align-self: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -35,6 +35,20 @@ app-signature-preview {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: gen-name;
+}
+
+#generator-name label {
+  display: inline;
+}
+
+#gtitle input {
+  min-width: 0 !important;
+  max-width: 70px !important;
+  text-align: center;
+}
+
+#gname input {
+  min-width: calc(70% - 50px);
 }
 
 #generator-surname {
@@ -89,6 +103,9 @@ label {
   display: inline-block;
   font-size: 0.7em;
   color: #999;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #generator-button {
@@ -96,6 +113,11 @@ label {
   -ms-grid-column: 2;
   grid-area: gen-button;
   padding: 5px;
-  text-align: right;
+}
+
+#generator-button button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=generator-form.component.css.map */

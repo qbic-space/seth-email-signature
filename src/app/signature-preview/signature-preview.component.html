@@ -10,8 +10,11 @@
       </td>
       <td class="right-side">
         <p class="footnote">Z poważaniem / Best regards</p>
-        <p class="name">{{ person.name | nonBreakableHyphen | nonBreakableSpace }}
-          {{ person.surname | nonBreakableHyphen | nonBreakableSpace }}</p>
+        <p class="name">
+          {{ person.title | nonBreakableHyphen | nonBreakableSpace }} 
+          {{ person.name | nonBreakableHyphen | nonBreakableSpace }} 
+          {{ person.surname | nonBreakableHyphen | nonBreakableSpace }}
+        </p>
         <p class="footnote">
           {{ person.jobPL | nonBreakableHyphen | nonBreakableSpace }} /
           {{ person.jobEN | nonBreakableHyphen | nonBreakableSpace }}</p>

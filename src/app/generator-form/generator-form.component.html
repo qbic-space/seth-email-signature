@@ -1,38 +1,44 @@
   <div id="generator-main">
-    <form id="generator-form">
-      <label id="generator-name">Imię:
-        <input (change)="genUsername()"
-               [(ngModel)]="person.name"
-               placeholder="Imię"
-               name="name"
-               required />
-      </label>
+    <form id="generator-form" [formGroup]="generatorForm">
+      <div id="generator-name">
+        <label id="gtitle">Tytuł
+          <input formControlName="title"
+                 type="text"
+                 [(ngModel)]="person.title" />
+        </label>
+        <label id="gname">Imię:
+          <input  formControlName="name"
+                  [(ngModel)]="person.name"
+                  (change)="genUsername()"
+                  />
+        </label>
+      </div>
       <label id="generator-surname">Nazwisko:
-        <input (change)="genUsername()"
-               [(ngModel)]="person.surname"
-               placeholder="Nazwisko"
-               name="surname"
-               required />
+        <input  formControlName="surname"
+                type="text"
+                [(ngModel)]="person.surname"
+                (change)="genUsername()"
+                />
       </label>
       <label id="generator-job-pl">Stanowisko (PL):
-        <input name="jobPL"
+        <input formControlName="jobPL"
                [(ngModel)]="person.jobPL"
                placeholder="Stanowisko po polsku" />
       </label>
       <label id="generator-job-en">Stanowisko (EN):
-        <input name="jobEN"
+        <input formControlName="jobEN"
                [(ngModel)]="person.jobEN"
                placeholder="Job in English" />
       </label>
       <label id="generator-phone">Nr telefonu: +48
-        <input name="phone"
+        <input formControlName="phone"
                [dropSpecialCharacters]="false"
                mask="000 000 000"
                [(ngModel)]="person.phone"
                placeholder="Numer telefonu" />
       </label>
       <label id="generator-username">Użytkownik:
-        <input name="user"
+        <input formControlName="user"
                [(ngModel)]="person.user"
                placeholder="Nazwa użytkownika" />
       </label>
