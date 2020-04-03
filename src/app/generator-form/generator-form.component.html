@@ -1,45 +1,45 @@
-<main>
-  <form id="generator-form">
-    <label id="generator-name">Imię:
-      <input (change)="genUsername()"
-             [(ngModel)]="person.name"
-             placeholder="Imię"
-             name="name"
-             required />
-    </label>
-    <label id="generator-surname">Nazwisko:
-      <input (change)="genUsername()"
-             [(ngModel)]="person.surname"
-             placeholder="Nazwisko"
-             name="surname"
-             required />
-    </label>
-    <label id="generator-job-pl">Stanowisko (PL):
-      <input name="jobPL"
-             [(ngModel)]="person.jobPL"
-             placeholder="Stanowisko po polsku" />
-    </label>
-    <label id="generator-job-en">Stanowisko (EN):
-      <input name="jobEN"
-             [(ngModel)]="person.jobEN"
-             placeholder="Job in English" />
-    </label>
-    <label id="generator-phone">Nr telefonu: +48
-      <input name="phone"
-             [dropSpecialCharacters]="false"
-             mask="000 000 000"
-             [(ngModel)]="person.phone"
-             placeholder="Numer telefonu" />
-    </label>
-    <label id="generator-username">Użytkownik:
-      <input name="user"
-             [(ngModel)]="person.user"
-             placeholder="Nazwa użytkownika" />
-    </label>
-    <div id="generator-button">
-      <button (click)="inliner()"
-              routerLink="/deployer">Dalej</button>
-    </div>
-  </form>
-  <app-signature-preview [person]="person"></app-signature-preview>
-</main>
+  <div id="generator-main">
+    <form id="generator-form">
+      <label id="generator-name">Imię:
+        <input (change)="genUsername()"
+               [(ngModel)]="person.name"
+               placeholder="Imię"
+               name="name"
+               required />
+      </label>
+      <label id="generator-surname">Nazwisko:
+        <input (change)="genUsername()"
+               [(ngModel)]="person.surname"
+               placeholder="Nazwisko"
+               name="surname"
+               required />
+      </label>
+      <label id="generator-job-pl">Stanowisko (PL):
+        <input name="jobPL"
+               [(ngModel)]="person.jobPL"
+               placeholder="Stanowisko po polsku" />
+      </label>
+      <label id="generator-job-en">Stanowisko (EN):
+        <input name="jobEN"
+               [(ngModel)]="person.jobEN"
+               placeholder="Job in English" />
+      </label>
+      <label id="generator-phone">Nr telefonu: +48
+        <input name="phone"
+               [dropSpecialCharacters]="false"
+               mask="000 000 000"
+               [(ngModel)]="person.phone"
+               placeholder="Numer telefonu" />
+      </label>
+      <label id="generator-username">Użytkownik:
+        <input name="user"
+               [(ngModel)]="person.user"
+               placeholder="Nazwa użytkownika" />
+      </label>
+      <div id="generator-button">
+        <button (click)="inliner()"
+                routerLink="/deployer">Dalej</button>
+      </div>
+    </form>
+    <app-signature-preview [person]="person"></app-signature-preview>
+  </div>
