@@ -1,87 +1,78 @@
+// Defaults
 $blue: #3bbced;
 $grey: #999;
+// Seth specific variables
+$sethblue: #324b9b;
+$sethgreen: #28ae7a;
+// Preview specific variables
+$microspace: 0.1em;
 
+// Global reset
+* {
+    color: $sethblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+    
+// Preview canvas definition
 #preview {
     background: #eee;
     border-top: 1px solid $grey;
 }
 
-#table-preview {
+// Actual Preview
+.wrapper {
     padding-bottom: 10px;
 }
 
-#preview a {
-    text-decoration: none;
-}
-
-#preview p {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#preview .left-side {
+.left-side {
     width: 220px;
+    a {
+        text-align: center;
+    }
 }
 
-#preview .left-side a {
-    display: block;
-    text-align: center;
+.right-side {
+    border-left: 0.4em solid $sethgreen;
+    padding-left: 10px;
+    max-width: 376px;
 }
 
-#preview .footnote {
-    font-size: 0.7em;
-    color: #324b9b;
-    letter-spacing: 0.1em;
-    margin: 0.1em;
-}
-
-#preview table td {
-    padding: 0;
-}
-
-#preview .green-company {
-    letter-spacing: 0;
-    font-style: italic;
-    color: #28ae7a;
-}
-
-#preview .footnote a {
-    color: #324b9b;
-}
-
-#preview .social {
-    float: right;
-    margin: 1px;
-}
-
-#preview .accent {
-    font-weight: 900;
-}
-
-#preview .name {
+.name {
     letter-spacing: 0.5em;
-    color: #324b9b;
     font-size: 1em;
-    margin: 0.1em;
+    margin: $microspace;
     min-height: 19px;
     width:366px;
 }
 
-#preview .large-logo {
-    margin: 0 auto;
+.accent {
+    font-weight: 900;
 }
 
-#preview .small-logo {
-    margin: 30% auto;
-}
-
-#preview .right-side {
-    border-left: 0.4em solid #28ae7a;
-    padding-left: 10px !important;
-    max-width: 360px;
-}
-
-#preview .company-desc {
+.company-desc {
     font-size: 0.6em;
     letter-spacing: 0.02em;
-    color: #324b9b;
+}
+
+.footnote {
+    font-size: 0.7em;
+    letter-spacing: $microspace;
+    margin: $microspace;
+}
+
+.green-company {
+    letter-spacing: 0;
+    font-style: italic;
+    color: $sethgreen;
+}
+
+.social {
+    float: right;
+    margin: $microspace;
 }

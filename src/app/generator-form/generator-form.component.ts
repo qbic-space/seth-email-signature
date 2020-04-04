@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { GIENIA } from '../sample-genowefa';
 import { STRINGS } from '../signaturestrings';
 import { FormBuilder } from '@angular/forms';
-import { get } from 'http';
 
 @Component({
   selector: 'app-generator-form',
@@ -15,7 +14,7 @@ export class GeneratorFormComponent implements OnInit {
   signaturestrings = STRINGS;
   inlinedsignature : string;
 
-  generatorForm = this.fb.group ({
+  generatorForm = this.fbuild.group ({
     title: this.person.title,
     name: this.person.name,
     surname: this.person.surname,
@@ -26,7 +25,7 @@ export class GeneratorFormComponent implements OnInit {
   });
 
   constructor(
-    private fb: FormBuilder
+    private fbuild: FormBuilder
   ) { }
 
   ngOnInit(): void {

@@ -6,7 +6,7 @@ export const GIENIA = {
     surname: 'Brzęczyszczykiewicz',
     jobPL: 'Specjalista ds wszelakich',
     jobEN: 'Various Stuff Specialist',
-    phone: '123456789',
+    phone: '123 456 789',
     user: 'gbrzeczyszczykiewicz'
 };
 
