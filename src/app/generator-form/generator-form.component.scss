@@ -1,8 +1,5 @@
-$blue: #3bbced;
-$grey: #999;
-
+// CSS Grid: Main areas setting
 #generator-main {
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(33%, auto);
@@ -11,95 +8,42 @@ $grey: #999;
     "generator"
     "preview";
 }
+#generator-form {grid-area: generator;}
+app-signature-preview {grid-area: preview;}
 
-app-signature-preview {
-    grid-area: preview;
+// CSS Grid: Generator Form areas setting
+#generator-form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: minmax(70px, auto);
+    grid-auto-rows: minmax(30px, auto);
+    grid-gap: 10px;
+    grid-template-areas:
+    "gen-title gen-name gen-name gen-surname gen-surname gen-surname"
+    "gen-jobpl gen-jobpl gen-jobpl gen-joben gen-joben gen-joben"
+    "gen-phone gen-phone gen-phone gen-button gen-button gen-button"
+    "gen-user gen-user gen-user gen-button gen-button gen-button";
+}
+#generator-title {grid-area: gen-title;}
+#generator-name {grid-area: gen-name;}
+#generator-surname {grid-area: gen-surname;}
+#generator-job-pl {grid-area: gen-jobpl;}
+#generator-job-en {grid-area: gen-joben;}
+#generator-phone {grid-area: gen-phone;}
+#generator-username {grid-area: gen-user;}
+#generator-button {grid-area: gen-button;}
+
+// Form layout
+#generator-main {
+    height: 100%;
 }
 
 #generator-form {
     align-self: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(30px, auto);
-    grid-gap: 10px;
-    grid-area: generator;
-    grid-template-areas: 
-    "gen-name gen-surname"
-    "gen-jobpl gen-joben"
-    "gen-phone ."
-    "gen-user gen-button";
-    text-align: right;
-}
-
-#generator-name {
-    grid-area: gen-name;
-}
-
-#generator-name label {
-    display: inline;
-}
-
-#gtitle input {
-    min-width: 0 !important;
-    max-width: 70px !important;
-    text-align: center;
-}
-
-#gname input {
-    min-width: calc(70% - 50px);
-}
-
-#generator-surname {
-    grid-area: gen-surname;
-}
-
-#generator-job-pl {
-    grid-area: gen-jobpl;
-}
-
-#generator-job-en {
-    grid-area: gen-joben;
-}
-
-#generator-phone {
-    grid-area: gen-phone;
-
-}
-
-#generator-username input, #generator-phone input {
-    text-align: center;
-}
-
-#generator-username {
-    grid-area: gen-user;
-}
-
-input {
-    border: none;
-    margin: 5px;
-    min-width: 70%;
-    border-bottom: 0.5px solid $blue;
-}
-
-input:focus, input:active {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid $blue;
-    background: #efefef;
-}
-
-label {
-    display: inline-block;
-    font-size: 0.7em;
-    color: $grey;
-    align-self: center;
 }
 
 #generator-button {
-    grid-area: gen-button;
     padding: 5px;
-}
-
-#generator-button button {
-    align-self: center;
+    justify-self: center;
+    align-self: end;
 }

@@ -1,6 +1,6 @@
 import { Person } from "./person";
 
-export const GIENIA = {
+export const GIENIA: Person = {
     title: 'dr inż.',
     name: 'Grzegorz',
     surname: 'Brzęczyszczykiewicz',

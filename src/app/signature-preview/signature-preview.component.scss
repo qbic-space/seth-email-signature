@@ -1,10 +1,10 @@
 // Defaults
-$blue: #3bbced;
 $grey: #999;
 // Seth specific variables
 $sethblue: #324b9b;
 $sethgreen: #28ae7a;
 // Preview specific variables
+$previewbg: #eee;
 $microspace: 0.1em;
 
 // Global reset
@@ -21,7 +21,7 @@ a {
     
 // Preview canvas definition
 #preview {
-    background: #eee;
+    background: $previewbg;
     border-top: 1px solid $grey;
 }
 

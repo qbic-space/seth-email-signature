@@ -5,6 +5,8 @@ html {
 
 body, h1, h2, p {
   margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -37,5 +39,29 @@ button:focus {
   outline: none;
   -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  border: none;
+  margin: 0.1em 0;
+  border-bottom: 0.5px solid #3bbced;
+  width: 100%;
+}
+
+input:focus, input:active {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #3bbced;
+  background: #efefef;
+}
+
+label {
+  display: inline-block;
+  font-size: 0.7em;
+  color: #999;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 20px;
 }
 /*# sourceMappingURL=styles.css.map */

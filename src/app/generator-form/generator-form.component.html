@@ -1,44 +1,44 @@
   <div id="generator-main">
-    <form id="generator-form" [formGroup]="generatorForm">
-      <div id="generator-name">
-        <label id="gtitle">Tytuł
-          <input formControlName="title"
-                 type="text"
-                 [(ngModel)]="person.title" />
-        </label>
-        <label id="gname">Imię:
-          <input  formControlName="name"
+    <form id="generator-form">
+      <label id="generator-title">Tytuł
+        <input name="title"
+               type="text"
+               [(ngModel)]="person.title"
+               />
+      </label>
+        <label id="generator-name">Imię:
+          <input  name="name"
+                  type="text"
                   [(ngModel)]="person.name"
                   (change)="genUsername()"
                   />
         </label>
-      </div>
       <label id="generator-surname">Nazwisko:
-        <input  formControlName="surname"
+        <input  name="surname"
                 type="text"
                 [(ngModel)]="person.surname"
                 (change)="genUsername()"
                 />
       </label>
       <label id="generator-job-pl">Stanowisko (PL):
-        <input formControlName="jobPL"
+        <input name="jobPL"
                [(ngModel)]="person.jobPL"
                placeholder="Stanowisko po polsku" />
       </label>
       <label id="generator-job-en">Stanowisko (EN):
-        <input formControlName="jobEN"
+        <input name="jobEN"
                [(ngModel)]="person.jobEN"
                placeholder="Job in English" />
       </label>
-      <label id="generator-phone">Nr telefonu: +48
-        <input formControlName="phone"
+      <label id="generator-phone">Nr telefonu:
+        <input name="phone"
                [dropSpecialCharacters]="false"
                mask="000 000 000"
                [(ngModel)]="person.phone"
                placeholder="Numer telefonu" />
       </label>
       <label id="generator-username">Użytkownik:
-        <input formControlName="user"
+        <input name="user"
                [(ngModel)]="person.user"
                placeholder="Nazwa użytkownika" />
       </label>

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 /* Additional external imports */
 import { NgxMaskModule } from 'ngx-mask';
 /* Components */
@@ -14,7 +14,6 @@ import { DeployYourSignatureComponent } from './deploy-your-signature/deploy-you
 import { NonBreakableSpacePipe } from './non-breakable-space.pipe';
 import { NonBreakableHyphenPipe } from './non-breakable-hyphen.pipe';
 import { GenerateUsernamePipe } from './generate-username.pipe';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -28,9 +27,9 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
     NgxMaskModule.forRoot(),
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

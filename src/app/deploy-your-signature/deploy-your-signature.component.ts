@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-deploy-your-signature',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deploy-your-signature.component.css']
 })
 export class DeployYourSignatureComponent implements OnInit {
+
+  @Input() inlinedsignature : string;
 
   constructor() { }
 
