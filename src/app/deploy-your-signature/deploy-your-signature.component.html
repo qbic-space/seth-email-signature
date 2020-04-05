@@ -1,5 +1,13 @@
-<p>deploy-your-signature works!</p>
+<h3>Twoja sygnatura jest gotowa!</h3>
+<p>Możesz skopiować ją do schowka lub pobrać w formie pliku tekstowego.</p>
+<p>Tego, jak jej użyć, dowiesz się z instrukcji Twojej aplikacji poczty.</p>
+<h3>Instrukcje dla najbardziej powszechnych aplikacji poczty elektronicznej</h3>
+
+
 <button routerLink="/generator">Wstecz</button>
 <button routerLink="/generator">Skopiuj do schowka</button>
 
-{{ inlinedsignature }}
+<p style="font-size: 0.55em;">
+    <br>
+    {{person.inlinedsignature}}
+</p>

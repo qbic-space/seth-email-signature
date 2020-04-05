@@ -1,5 +1,6 @@
 //Defaults
 $blue: #3bbced;
+$buttonblue: #4c8bf5;
 $grey: #999;
 
 html {
@@ -23,7 +24,7 @@ body {
 button {
     padding: 10px 50px;
     margin: 2px;
-    background: #4c8bf5;
+    background: $buttonblue;
     border: none;
     border-radius: 5px;
     color: white;
@@ -31,28 +32,35 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover:enabled {
     border: none;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 }
 
-button:focus {
+button:active {
     border: none;
     outline: none;
-    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: none !important;
 }
+
+button:disabled {
+    background: $grey;
+}
+
+
 
 input {
     border: none;
     margin: 0.1em 0;
-    border-bottom: 0.5px solid $blue;
+    border-bottom: 1.5px solid #ddd;
     width: 100%;
+    padding: 0.1em;
 }
 
 input:focus, input:active {
     border: none;
+    border-bottom: 1.5px solid $grey;
     outline: none;
-    border-bottom: 2px solid $blue;
     background: #efefef;
 }
 
@@ -62,4 +70,16 @@ label {
     color: $grey;
     align-self: center;
     margin: 0 20px;
+}
+
+.ng-valid[required], .ng-valid.required {
+    border-bottom: 1.5px solid $blue;
+}
+
+.ng-invalid:not(form) {
+    border-bottom: 1.5px solid #bd0000;
+}
+
+.form-alert {
+    color: #bd0000;
 }

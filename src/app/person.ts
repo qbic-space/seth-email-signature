@@ -6,4 +6,5 @@ export interface Person {
     jobEN: string;
     phone: string;
     user: string;
+    inlinedsignature: string;
 }

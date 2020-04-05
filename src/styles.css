@@ -28,30 +28,35 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover:enabled {
   border: none;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-button:focus {
+button:active {
   border: none;
   outline: none;
-  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+button:disabled {
+  background: #999;
 }
 
 input {
   border: none;
   margin: 0.1em 0;
-  border-bottom: 0.5px solid #3bbced;
+  border-bottom: 1.5px solid #ddd;
   width: 100%;
+  padding: 0.1em;
 }
 
 input:focus, input:active {
   border: none;
+  border-bottom: 1.5px solid #999;
   outline: none;
-  border-bottom: 2px solid #3bbced;
   background: #efefef;
 }
 
@@ -63,5 +68,17 @@ label {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 0 20px;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-bottom: 1.5px solid #3bbced;
+}
+
+.ng-invalid:not(form) {
+  border-bottom: 1.5px solid #bd0000;
+}
+
+.form-alert {
+  color: #bd0000;
 }
 /*# sourceMappingURL=styles.css.map */
