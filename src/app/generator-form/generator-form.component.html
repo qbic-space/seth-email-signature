@@ -8,7 +8,8 @@
                type="text"
                [(ngModel)]="person.title" />
       </label>
-      <label id="generator-name"><span [hidden]="name.invalid && !name.pristine">Imię </span>
+      <label id="generator-name">
+        <span [hidden]="name.invalid && !name.pristine">Imię</span>
         <span [hidden]="name.valid || name.pristine"
               class="form-alert"
               >Imię jest obowiązkowe</span>
@@ -20,21 +21,36 @@
                (change)="genUsername()"
                required />
       </label>
-      <label id="generator-surname">Nazwisko
-        <input name="surname"
+      <label id="generator-surname">
+        <span [hidden]="surname.invalid && !surname.pristine">Nazwisko</span>
+        <span [hidden]="surname.valid || surname.pristine"
+              class="form-alert"
+              >Nazwisko jest obowiązkowe</span>
+        <input #surname="ngModel"
+               name="surname"
                type="text"
                [(ngModel)]="person.surname"
                (change)="genUsername()"
                required />
       </label>
-      <label id="generator-job-pl">Stanowisko (PL)
-        <input name="jobPL"
+      <label id="generator-job-pl">
+        <span [hidden]="jobPL.invalid && !jobPL.pristine">Stanowisko (PL)</span>
+        <span [hidden]="jobPL.valid || jobPL.pristine"
+              class="form-alert"
+              >Stanowisko (PL) jest obowiązkowe</span>
+        <input #jobPL="ngModel"
+               name="jobPL"
                type="text"
                [(ngModel)]="person.jobPL"
                required />
       </label>
-      <label id="generator-job-en">Stanowisko (EN)
-        <input name="jobEN"
+      <label id="generator-job-en">
+        <span [hidden]="jobEN.invalid && !jobEN.pristine">Stanowisko (EN)</span>
+        <span [hidden]="jobEN.valid || jobEN.pristine"
+              class="form-alert"
+              >Stanowisko (EN) jest obowiązkowe</span>
+        <input #jobEN="ngModel"
+               name="jobEN"
                type="text"
                [(ngModel)]="person.jobEN"
                required />
@@ -46,14 +62,19 @@
                [dropSpecialCharacters]="false"
                mask="000 000 000" />
       </label>
-      <label id="generator-username">Użytkownik
-        <input name="user"
+      <label id="generator-username">
+        <span [hidden]="user.invalid && !user.pristine">Użytkownik</span>
+        <span [hidden]="user.valid || user.pristine"
+              class="form-alert"
+              >Użytkownik jest obowiązkowy</span>
+        <input #user="ngModel"
+               name="user"
                type="text"
                [(ngModel)]="person.user"
                required />
       </label>
       <div id="generator-button">
-        <button type="submit"
+        <button type="button"
                 [disabled]="!generatorForm.form.valid"
                 routerLink="/deployer"
                 >Dalej</button>
