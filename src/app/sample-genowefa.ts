@@ -8,7 +8,7 @@ export const GIENIA: Person = {
     jobEN: '',//Various Stuff Specialist',
     phone: '',//123 456 789',
     user: '',//gbrzeczyszczykiewicz',
-    inlinedsignature: ''
+    inlinedsignature: '',
 };
 
 // Non-breakable hyphen: ‑ 

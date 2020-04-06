@@ -9,6 +9,7 @@ import { GIENIA } from './sample-genowefa';
 export class PersonService {
 
   person = GIENIA;
+  filledform = false;
 
   getPerson(): Person {
     return this.person;

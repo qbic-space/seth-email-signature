@@ -19,6 +19,9 @@ export class GeneratorFormComponent implements OnInit {
   
   constructor(private personService: PersonService) {}
   
-  ngOnInit(): void {this.getPerson();}
+  ngOnInit(): void {
+    this.getPerson();
+    this.personService.filledform = true;
+  }
   
 }
