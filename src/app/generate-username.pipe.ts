@@ -1,6 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Person } from './person';
-import { GIENIA } from './sample-genowefa';
 
 @Pipe({
   name: 'generateUsername'

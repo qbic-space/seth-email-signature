@@ -14,6 +14,8 @@ import { DeployYourSignatureComponent } from './deploy-your-signature/deploy-you
 import { NonBreakableSpacePipe } from './non-breakable-space.pipe';
 import { NonBreakableHyphenPipe } from './non-breakable-hyphen.pipe';
 import { GenerateUsernamePipe } from './generate-username.pipe';
+// Directives
+import { CopyToClipboardDirective } from './copy-to-clipboard.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { GenerateUsernamePipe } from './generate-username.pipe';
     NonBreakableHyphenPipe,
     GenerateUsernamePipe,
     DeployYourSignatureComponent,
+    CopyToClipboardDirective,
   ],
   imports: [
     BrowserModule,
