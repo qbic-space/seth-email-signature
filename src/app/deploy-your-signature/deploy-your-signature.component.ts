@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PersonService } from '../person.service';
 import { Person } from '../person';
+import { faStepBackward, faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-deploy-your-signature',
@@ -8,6 +9,9 @@ import { Person } from '../person';
   styleUrls: ['./deploy-your-signature.component.css']
 })
 export class DeployYourSignatureComponent implements OnInit {
+
+  faStepBackward = faStepBackward;
+  faDownload = faDownload;
 
   @Input() inlinedsignature : string;
 

@@ -105,16 +105,4 @@ app-signature-preview {
       -ms-grid-row-align: end;
       align-self: end;
 }
-
-.ng-valid[required], .ng-valid.required {
-  border-bottom: 1.5px solid #3bbced;
-}
-
-.ng-invalid:not(form) {
-  border-bottom: 1.5px solid #bd0000;
-}
-
-.form-alert {
-  color: #bd0000;
-}
 /*# sourceMappingURL=generator-form.component.css.map */

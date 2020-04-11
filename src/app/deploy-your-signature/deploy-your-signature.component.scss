@@ -1,0 +1,33 @@
+$linkblue: #4c8bf5;
+
+#deployer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+    "info info info"
+    "buttons buttons buttons"
+    "thbird outlook macmail";
+}
+#info {grid-area: info;}
+#buttons {grid-area: buttons;}
+#thbird {grid-area: thbird;}
+#outlook {grid-area: outlook;}
+#macmail {grid-area: macmail;}
+
+.justified-img {
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+    a, a:after {
+        color: $linkblue;
+    }
+}
+
+#buttons {
+    text-align: center;
+    margin: 25px 0;
+}
+#buttons button {
+    margin: 0 25px;
+}

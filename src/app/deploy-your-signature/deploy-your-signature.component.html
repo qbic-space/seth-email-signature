@@ -1,13 +1,29 @@
-<h3>Twoja sygnatura jest gotowa!</h3>
-<p>Możesz skopiować ją do schowka lub pobrać w formie pliku tekstowego.</p>
-<p>Tego, jak jej użyć, dowiesz się z instrukcji Twojej aplikacji poczty.</p>
-<p>Instrukcje dla najbardziej powszechnych aplikacji znajdziesz poniżej</p>
-<br>
+<div id="deployer-grid">
+  <div id="info-icon"></div>
+  <div id="info">
+    <h3>Twoja sygnatura jest gotowa!</h3>
+    <p>Tego, jak jej użyć, dowiesz się z instrukcji Twojej aplikacji poczty.</p>
+    <p>Podczas konfigurowania sygnatury pamiętaj, by wybrać opcję sygnatury HTML.</p>
+    <p>Odnośniki do instrukcji dla najbardziej powszechnych aplikacji znajdziesz poniżej.</p>
+  </div>
 
-<button routerLink="/generator">Wstecz</button>
-<button [copy-to-clipboard]="person.inlinedsignature">Skopiuj do schowka</button>
-
-<p style="font-size: 0.55em;">
-    <br>
-    {{person.inlinedsignature}}
-</p>
+  <div id="buttons">
+    <button routerLink="/generator"><fa-icon [icon]="faStepBackward"></fa-icon> Wstecz</button>
+    <button [copy-to-clipboard]="person.inlinedsignature"><fa-icon [icon]="faDownload"></fa-icon> Pobierz sygnaturę do schowka</button>
+  </div><!-- Buttons -->
+  <div id="thbird" class="justified-img">
+    <img src="../../assets/img/icon-thunderbird.png" />
+    <p>Mozilla Thunderbird</p>
+    <a href="https://support.mozilla.org/en-US/kb/signatures" target="_blank">Link do instrukcji</a>
+  </div>
+  <div id="outlook" class="justified-img">
+    <img src="../../assets/img/icon-outlook.png" />
+    <p>Microsoft Outlook</p>
+    <a href="https://www.christopherbolt.com/support/knowledgebase/24/Installing-HTML-email-signatures-in-Microsoft-Outlook.html" target="_blank">Link do instrukcji</a>
+  </div>
+  <div id="macmail" class="justified-img">
+    <img src="../../assets/img/icon-macmail.png" />
+    <p>MacBook Mail</p>
+    <a href="http://matt.coneybeare.me/how-to-make-an-html-signature-in-apple-mail-for-mojave-os-x-10-dot-14/" target="_blank">Link do instrukcji</a>
+  </div>
+</div>

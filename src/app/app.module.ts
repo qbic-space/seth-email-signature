@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 /* Additional external imports */
 import { NgxMaskModule } from 'ngx-mask';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 /* Components */
 import { GeneratorFormComponent } from './generator-form/generator-form.component';
 import { SignaturePreviewComponent } from './signature-preview/signature-preview.component';
@@ -32,7 +33,8 @@ import { CopyToClipboardDirective } from './copy-to-clipboard.directive';
     BrowserModule,
     NgxMaskModule.forRoot(),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+#deployer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+      grid-template-areas: "info info info" "buttons buttons buttons" "thbird outlook macmail";
+}
+
+#info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: info;
+}
+
+#buttons {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: buttons;
+}
+
+#thbird {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: thbird;
+}
+
+#outlook {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: outlook;
+}
+
+#macmail {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: macmail;
+}
+
+.justified-img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  text-align: center;
+}
+
+.justified-img a, .justified-img a:after {
+  color: #4c8bf5;
+}
+
+#buttons {
+  text-align: center;
+  margin: 25px 0;
+}
+
+#buttons button {
+  margin: 0 25px;
+}
+/*# sourceMappingURL=deploy-your-signature.component.css.map */
