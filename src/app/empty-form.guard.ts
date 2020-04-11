@@ -12,7 +12,6 @@ export class EmptyFormGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     if(this.personService.filledform){
-      console.log(this.personService.filledform);
       return true;
     } else {
       return this.router.parseUrl("");

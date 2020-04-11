@@ -5,8 +5,7 @@
 <br>
 
 <button routerLink="/generator">Wstecz</button>
-<button routerLink="/generator">Skopiuj do schowka</button>
-<button routerLink="/generator">Zapisz jako plik</button>
+<button [copy-to-clipboard]="person.inlinedsignature">Skopiuj do schowka</button>
 
 <p style="font-size: 0.55em;">
     <br>
