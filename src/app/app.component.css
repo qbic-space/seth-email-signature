@@ -11,7 +11,14 @@
       grid-template-areas: "aside aside header header header" "aside aside main   main   main";
 }
 
-header, main {
+@media screen and (max-width: 1048px) {
+  #content {
+        grid-template-areas: "header" "aside" "main";
+  }
+}
+
+header,
+main {
   padding: 0 25px;
 }
 
