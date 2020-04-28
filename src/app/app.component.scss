@@ -12,7 +12,7 @@ $grey: #999;
   grid-template-areas:
     "aside aside header header header"
     "aside aside main   main   main";
-    // TODO
+    // FIXME  [SSG-43] Fix media screen and setup responsiveness for smaller screens
   @media screen and (max-width: 1048px) {
     grid-template-areas:
       "header"
