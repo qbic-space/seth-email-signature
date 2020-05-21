@@ -4,7 +4,7 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-      grid-template-areas: "info info info" "buttons buttons buttons" "thbird outlook macmail";
+      grid-template-areas: "info info info" "buttons buttons buttons" "thbird outlook macmail";
 }
 
 #info {

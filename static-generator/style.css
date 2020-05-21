@@ -16,7 +16,7 @@ body {
   grid-gap: 10px;
   max-width: 99%;
   height: 100%;
-      grid-template-areas: "aside aside header header header" "aside aside main   main   main";
+      grid-template-areas: "aside aside header header header" "aside aside main   main   main";
 }
 
 #grid {
@@ -93,7 +93,7 @@ h2 {
       grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(30px, auto);
   grid-gap: 10px;
-      grid-template-areas: "gen-name gen-surname" "gen-jobpl gen-joben" "gen-phone ." "gen-user gen-button";
+      grid-template-areas: "gen-name gen-surname" "gen-jobpl gen-joben" "gen-phone ." "gen-user gen-button";
   text-align: right;
 }
 

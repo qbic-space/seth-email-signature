@@ -8,10 +8,11 @@ html {
     width: 100%;
 }
 
-body, h1, h2, p {
+body, h1, h2, p, label {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {

@@ -8,12 +8,12 @@
   max-width: 99%;
   height: 100%;
   grid-auto-rows: 75px 1fr;
-      grid-template-areas: "aside aside header header header" "aside aside main   main   main";
+      grid-template-areas: "aside aside header header header" "aside aside main   main   main";
 }
 
 @media screen and (max-width: 1048px) {
   #content {
-        grid-template-areas: "header" "aside" "main";
+        grid-template-areas: "header" "aside" "main";
   }
 }
 

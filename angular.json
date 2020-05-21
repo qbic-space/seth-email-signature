@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "seth-email-signature"
+  "defaultProject": "seth-email-signature",
+  "cli": {
+    "analytics": "b8bdf65f-0b7b-4987-8592-aae458fb2982"
+  }
 }
